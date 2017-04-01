@@ -20,10 +20,14 @@ Production ready application for maintaining contact information built with Reac
 ### First step is to install all the dependencies:
 
 In the terminal run command: 
+```
 > npm install
+```
 
 ### You can start your project by the following command:
+```
 > nodemon server.js
+```
 
 ### In your browser, open up the localhost: http://localhost:3000/
 Changes will now update live in the browser
