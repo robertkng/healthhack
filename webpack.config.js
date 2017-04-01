@@ -5,8 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // const ReactTooltip = require('react-tooltip');
 
-const BUILD_DIR = path.resolve(__dirname, 'dist');
-const APP_DIR = path.resolve(__dirname, 'src');
+const BUILD_DIR         = path.resolve(__dirname, 'dist');
+const APP_DIR           = path.resolve(__dirname, 'src');
 
 
 module.exports = {
@@ -26,7 +26,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'okc',
+      title: 'evolent',
       xhtml: true,
       inject: false,
       template: require('html-webpack-template'),
