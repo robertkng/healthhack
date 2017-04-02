@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import App from './components/App/App.jsx';
+import Nav from './components/Nav/Nav.jsx';
 import List from './components/List/List.jsx';
 import Add from './components/Add/Add.jsx';
 
 ReactDOM.render((
   <Router history = {browserHistory}>
     <Route path={"/"} component={App} >
+      <IndexRoute component={List} />
       <Route path={"list"} component={List} />
       <Route path={"add"} component={Add} />
     </Route>

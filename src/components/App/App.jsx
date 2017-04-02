@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Nav from '../Nav/Nav.jsx';
-// import List from '../List/List.jsx';
-// import Add from '../Add/Add.jsx';
 import './App.css';
 
 export default class App extends Component {
