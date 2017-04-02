@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Add.css';
 
-class Add extends Component {
+export default class Add extends Component {
 
   constructor() {
     super();
@@ -82,6 +82,5 @@ class Add extends Component {
       </div>
     );
   }
-  }
+  };
 
-export default Add;
