@@ -82,6 +82,6 @@ class Add extends Component {
       </div>
     );
   }
-}
+  }
 
 export default Add;

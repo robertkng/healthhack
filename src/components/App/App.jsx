@@ -8,16 +8,11 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="nav">
-          <Nav />
-        </div>
-        <div className="add feature">
-        </div>
-        <div className="list feature">
-        </div>
-        <h1></h1>
-        <div>
+      <div className="container">
+        <div className="row">
+          <div className="col-xs-10 col-xs-offset-1">
+            <Nav />
+          </div>
         </div>
       </div>
     );
