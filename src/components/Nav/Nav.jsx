@@ -6,15 +6,13 @@ export default class Nav extends Component {
 
   render() {
     return (
-      <nav className="navbar-container">
-        <div className="navbar-header">
-          <ul className="navbar">
-            <img src={require('./evolent.png')} className="logo" />
-            <li><Link to="/add">Add Contacts</Link></li>
-            <li><Link to="/list">List Contacts</Link></li>
-          </ul>
+      <div className="navbar-container">
+        <div className="navbar-button-container">
+          <img src={require('./evolent.png')} className="logo" />
+          <Link to="/add" className="navbar-button">Add Contacts</Link>
+          <Link to="/" className="navbar-button">List Contacts</Link>
         </div>
-      </nav>
+      </div>
     );
   }
   }
