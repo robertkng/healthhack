@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Nav from '../Nav/Nav.jsx';
-import Header from '../Header/Header.jsx';
 import './App.css';
 
 export default class App extends Component {
@@ -9,10 +8,9 @@ export default class App extends Component {
     return (
       <div className="App">
         <div className="header">
-          <Header />
+          <Nav />
         </div>
         <div className="container">
-          <Nav />
         </div>
       </div>
     );
