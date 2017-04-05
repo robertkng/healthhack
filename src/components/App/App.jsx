@@ -1,8 +1,28 @@
 import React, { Component } from 'react';
 import Nav from '../Nav/Nav.jsx';
+import List from './List/List.jsx';
 import './App.css';
 
 export default class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      contacts: [],
+      result: {},
+    };
+  }
+
+  getAllContacts() {
+    fetch('/contacts')
+    .then(r => r.json())
+    .then((results) => {
+      this.setState({
+        contacts: results.data,
+      });
+      console.log(this.state);
+    })
+    .catch(err => err);
+  }
 
   render() {
     return (
@@ -12,6 +32,10 @@ export default class App extends Component {
         </div>
         <div className="props">
           {this.props.children}
+          <List
+            contacts={this.state.contacts}
+            getAllContacts={this.getAllContacts.bind(this)}
+          />
         </div>
       </div>
     );
