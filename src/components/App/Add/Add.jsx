@@ -60,7 +60,7 @@ export default class Add extends Component {
   render() {
     return (
       <div className="info">
-        <br/>
+        <h1>Add Contact Information</h1>
         <div className="first-name">
         First Name
         <br/>
