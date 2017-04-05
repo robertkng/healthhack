@@ -57,12 +57,33 @@ export default class Add extends Component {
     .catch(err => console.log(err));
   }
 
+  alpha(e) {
+    const values = /[a-zA-Z]+/g;
+    if(!values.test(e.key)) {
+      e.preventDefault();
+    }
+  }
+
+  numeric(e) {
+    const values = /[0-9]+/g;
+    if(!values.test(e.key)) {
+      e.preventDefault();
+    }
+  }
+
+  alphaNumeric(e) {
+    const values = /[0-9a-zA-Z@.]+/g;
+    if(!values.test(e.key)) {
+      e.preventDefault();
+    }
+  }
+
   render() {
     return (
       <div className="info">
         <h1>Add Contact Information</h1>
         <div className="first-name">
-        First Name
+        First Name*
         <br/>
           <input
             id="first-name"
@@ -70,12 +91,13 @@ export default class Add extends Component {
             maxLength="50"
             value={this.state.firstName}
             onChange={this.addFirstName.bind(this)}
+            onKeyPress={(e) => this.alpha(e)}
             className="form"
           />
         </div>
         <br/>
         <div className="last-name">
-        Last Name
+        Last Name*
         <br/>
           <input
             id="last-name"
@@ -83,12 +105,13 @@ export default class Add extends Component {
             maxLength="50"
             value={this.state.lastName}
             onChange={this.addLastName.bind(this)}
+            onKeyPress={(e) => this.alpha(e)}
             className="form"
           />
         </div>
         <br/>
         <div className="email">
-        Email
+        Email*
         <br/>
           <input
             id="email"
@@ -96,12 +119,13 @@ export default class Add extends Component {
             maxLength="50"
             value={this.state.email}
             onChange={this.addEmail.bind(this)}
+            onKeyPress={(e) => this.alphaNumeric(e)}
             className="form"
           />
         </div>
         <br/>
         <div className="phone-number">
-        Phone Number
+        Phone Number*
         <br/>
           <input
             id="phone-number"
@@ -109,6 +133,7 @@ export default class Add extends Component {
             maxLength="10"
             value={this.state.phoneNumber}
             onChange={this.addPhoneNumber.bind(this)}
+            onKeyPress={(e) => this.numeric(e)}
             className="form"
           />
         </div><br/>
@@ -125,7 +150,7 @@ export default class Add extends Component {
         <button
           id="onclick"
           onClick
-        >SUBMIT CONTACT
+        >SUBMIT
         </button>
       </div>
     );

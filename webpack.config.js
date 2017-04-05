@@ -26,7 +26,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'evolent',
+      title: 'Evolent Health',
       xhtml: true,
       inject: false,
       template: require('html-webpack-template'),

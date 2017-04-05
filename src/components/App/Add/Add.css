@@ -1,5 +1,5 @@
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans",Helvetica,Arial,sans-serif;
 }
 
 h1 {
@@ -13,7 +13,7 @@ h1 {
 
 .form {
   height: 30px;
-  width: 250px;
+  width: 350px;
 }
 
 select {
@@ -21,17 +21,23 @@ select {
 }
 
 button {
-  margin: 5%;
-  width: 50%;
-  height: 10%;
-  border-radius: 16px;
-  border-color: #00b8a4;
-  background-color: #00b8a4;
-  color: white;
-  font-size: 15px;
+  margin: 3%;
+  margin-left: 30%;
+  padding: 5px 30px;
+  border-width: 2px;
+  border: 2px solid transparent;
+  border-color: #FF811E;
+  background-color: transparent;
+  color: #FF811E;
+  font-size: 16px;
   font-family: sofia-pro,sans-serif;
+  display: inherit;
 }
 
 span {
   font-size: 16px;
+}
+
+input {
+  font-size: 26px;
 }
