@@ -7,7 +7,7 @@ render() {
   return (
     <div className="three">
       <br/>
-      <h1>Three</h1>
+      <h1>Alert</h1>
     </div>
     );
   }

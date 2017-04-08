@@ -8,7 +8,7 @@ render() {
   return (
     <div className="one">
       <br/>
-      <h1>One</h1>
+      <h1>This is how you're doing</h1>
     </div>
     );
   }
