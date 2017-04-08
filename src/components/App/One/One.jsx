@@ -3,7 +3,6 @@ import './One.css';
 
 export default class One extends Component {
 
-
 render() {
   return (
     <div className="one">
