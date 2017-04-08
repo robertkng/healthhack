@@ -8,6 +8,7 @@ export default class Nav extends Component {
     return (
       <div className="navbar-container">
         <div className="navbar-button-container">
+          <img src={require('./healthhacks.png')} className="logo" />
           <Link to="/three" className="navbar-button">Three</Link>
           <Link to="/two" className="navbar-button">Two</Link>
           <Link to="/" className="navbar-button">One</Link>
