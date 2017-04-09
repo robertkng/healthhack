@@ -12,7 +12,7 @@ ReactDOM.render((
     <Route path="/" component={App} >
       <IndexRoute component={One} />
         <Route path="/Two" component={Two} />
-        <Route path="/Three" component={Four} />
+        <Route path="/Four" component={Four} />
         <Route path="/Three" component={Three} />
     </Route>
   </Router>

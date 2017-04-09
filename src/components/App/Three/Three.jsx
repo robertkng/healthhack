@@ -7,7 +7,14 @@ render() {
   return (
     <div className="three">
       <br/>
-      <h1>Alert</h1>
+      <h1>Alerts</h1>
+        <select
+          valueLink="{this.linkState('val')}"
+          className="form">
+          <option value="active">Alert: You have missed your water pill ( or blood pressure pill) today ( or for 2 days etc)</option>
+        </select>
+        <br/>
+        <button id="onclick" onClick>SUBMIT</button>
     </div>
     );
   }
