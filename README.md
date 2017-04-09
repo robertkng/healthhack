@@ -1,4 +1,4 @@
-### Health Success
+### Team Name: Health Success
 
 Empower patients with Heart Failure 
 
@@ -6,8 +6,12 @@ Improve quality of life
 
 Reduce ED and Hospitalization rates 
 
-Team Name
+Team Members
+
 Fatma Ghedira
+
 Veena Lingam
+
 Chenchao Zhang
+
 Robert Ng
