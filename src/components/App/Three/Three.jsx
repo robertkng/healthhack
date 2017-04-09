@@ -30,6 +30,9 @@ render() {
     <div className="three">
       <br/>
       <h1>Call To Action Alerts</h1>
+        <img src={require('./alert.png')} className="alert" />
+        <br/>
+        <br/>
         <select
           valueLink="{this.linkState('val')}"
           className="form">

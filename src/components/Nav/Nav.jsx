@@ -12,7 +12,7 @@ export default class Nav extends Component {
           <Link to="/four" className="navbar-button">Tips</Link>
           <Link to="/three" className="navbar-button">Alerts</Link>
           <Link to="/two" className="navbar-button">Dashboard</Link>
-          <Link to="/" className="navbar-button">Home</Link>
+          <Link to="/" className="navbar-button">Profile</Link>
         </div>
       </div>
     );
