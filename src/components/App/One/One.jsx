@@ -7,7 +7,7 @@ render() {
   return (
     <div className="one">
       <br/>
-      <h1>This is how you're doing</h1>
+      <h1>Profile</h1>
       <img src={require('./patient.png')} className="patient" />
     </div>
     );
