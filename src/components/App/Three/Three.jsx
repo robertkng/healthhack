@@ -32,6 +32,8 @@ render() {
       <h1>Call To Action Alerts</h1>
         <img src={require('./alert.png')} className="alert" />
         <br/>
+        <img src={require('./alert2.png')} className="alert" />
+        <br/>
         <br/>
         <select
           valueLink="{this.linkState('val')}"
