@@ -9,7 +9,7 @@ export default class Nav extends Component {
       <div className="navbar-container">
         <div className="navbar-button-container">
           <img src={require('./healthsuccess.png')} className="logo" />
-          <Link to="/three" className="navbar-button">Tips</Link>
+          <Link to="/four" className="navbar-button">Tips</Link>
           <Link to="/three" className="navbar-button">Alerts</Link>
           <Link to="/two" className="navbar-button">Dashboard</Link>
           <Link to="/" className="navbar-button">Home</Link>

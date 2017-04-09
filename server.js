@@ -18,4 +18,17 @@ app.use(bodyParser.json());
 
 app.use('/', require('./routes/main'));
 
+app.post('/sendsms', bodyParser.json(), (req, res) => {
+  let client = require('twilio')(keys.sid, keys.token);
+  client.sendMessage({
+    to: req.body.recipient,
+    from: '+16462702585',
+    body: 'Alert: You have missed your water pill ( or blood pressure pill) today ( or for 2 days etc)'
+  }, function (err, responseData) {
+    if (!err) {
+      res.json({"From": responseData.from, "Body": responseData.body});
+    }
+  });
+});
+
 app.listen(PORT, () => console.log('server is listening on ', PORT));
